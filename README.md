@@ -21,9 +21,11 @@ Organize todos os arquivos em uma pasta com seu nome, como por exemplos: Grupo 1
 
 ### Git e Github
 - [Git e Github para Iniciantes](https://www.udemy.com/git-e-github-para-iniciantes/)
+- [Curso de Git do Professor Diogo Cezar](https://www.youtube.com/watch?v=iGD2Pgt2DBg&t=26s)
 ### Canais do Youtube Recomendados
 - [Traversy Media - (Desenvolvimento Web em Geral)](https://www.youtube.com/user/TechGuyWeb)
 - [Rocketseat - (React, NodeJS e outros frameworks)](https://www.youtube.com/channel/UCSfwM5u0Kce6Cce8_S72olg)
+- [Cursos variádos de Front-end e Back-end  (Inglês)](https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg/playlists)
 
 ### Prove seu valor e venha fazer parte da iniciativa Unect Jr.!
 ### Nós da Unect Jr. desejamos um bom desafio a todos! :)
