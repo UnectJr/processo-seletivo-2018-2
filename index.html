@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="jquery-ui.custom.min.js"></script>
+  <script type="text/javascript" src="mapa.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOVsqOeaPybTdLpIUSAi-DZiRMqWXaGQE" type="text/javascript"></script>
+  <!-- <script type="text/javascript" src="server.js"></script> -->
+</head>
+
+<body>
+  <form method="post" action="http://127.0.0.1:5000/api/local/create" id="local">
+    <fieldset>
+      <legend>Moradias</legend>
+      <div>
+        <label for="nome">Nome: </label>
+        <input type="text" id="nome" name="nome" />
+      </div>
+      <div name="selecao">
+        <label for="moradia">Tipo de Moradia: </label>
+        <select name="moradia" id="moradia">
+          <option value="0"></option>
+          <option value="República">República</option>
+          <option value="Kitnet">Kitnet</option>
+          <option value="Apartamento">Apartamento</option>
+          <option value="Pensionato">Pensionato</option>
+        </select>
+        <label for="vagas">Vagas: </label>
+        <select id="vagas" name="vagas">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4+">4+</option>
+        </select>
+        <label for="valor">Faixa de valor: </label>
+        <select onchange="" id="valor" name="valor">
+          <option value="Entre R$200,00 e R$300,00">Entre R$200,00 e R$300,00</option>
+          <option value="Entre R$300,00 e R$400,00">Entre R$300,00 e R$400,00</option>
+          <option value="Entre R$400,00 e R$500,00">Entre R$400,00 e R$500,00</option>
+          <option value="Entre R$500,00 e R$600,00">Entre R$500,00 e R$600,00</option>
+          <option value="Entre R$600,00 e R$700,00">Entre R$600,00 e R$700,00</option>
+        </select>
+        <label for="quarto">Tipo de Quarto: </label>
+        <select id="quarto" name="quarto">
+          <option value="Individual">Individual</option>
+          <option value="Compartilhado">Compartilhado</option>
+        </select>
+        <label for="mobilia">Mobília: </label>
+        <select id="mobilia" name="mobilia">
+          <option value="Sim">Sim</option>
+          <option value="Não">Não</option>
+        </select>
+        <label for="grupo">Grupo: </label>
+        <select id="grupo" name="grupo">
+          <option value="Somente meninas">Somente meninas</option>
+          <option value="Somente meninos">Somente meninos</option>
+          <option value="Misto">Misto</option>
+        </select>
+
+
+      </div>
+      <div>
+        <label for="endereco">Endereço: </label>
+        <input type="text" id="endereco" name="endereco" />
+      </div>
+      <div>
+        <input type="submit" id="btnEndereco" name="btnEndereco" value="Inserir endereço" />
+      </div>
+      <div id="mapa" style="height: 500px; width: 500px">
+      </div>
+      <div>
+        <label for="txtLegenda">Legenda</label>
+      </div>
+      <div>
+        <label for="txtRep"> Republica </label>
+        <img src="images/rep3.png">
+        <br />
+        <label for="txtAp">Apartamento</label>
+        <img src="images/ap2.png">
+        <br />
+        <label for="txtPens">Pensionato</label>
+        <img src="images/pensionato4.png">
+        <br />
+        <label for="txtKitNet">Kitnet</label>
+        <img src="images/kitnet3.png">
+      </div>
+      <!-- <div>
+                  <input type="button" id="btnBuscar" name="btnBuscar" value="Inserir" onclick="adicionar()"/>
+          </div> -->
+
+      <input type="hidden" id="latitude" name="latitude" />
+      <input type="hidden" id="longitude" name="longitude" />
+    </fieldset>
+  </form>
+</body>
+
+</html>
