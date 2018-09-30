@@ -34,7 +34,7 @@ const LocalSchema = new Schema({
   endereco: {
     type: String,
     required: true
-  } /*,
+  },
   latitude: {
     type: Number,
     required: true
@@ -42,7 +42,7 @@ const LocalSchema = new Schema({
   longitude: {
     type: Number,
     required: true
-  }*/
+  }
 });
 
 module.exports = Local = mongoose.model("local", LocalSchema);

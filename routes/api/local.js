@@ -15,9 +15,9 @@ router.post("/create", (req, res) => {
     mobilia: req.body.mobilia,
     valor: req.body.valor,
     grupo: req.body.grupo,
-    endereco: req.body.endereco
-    //latitude: req.body.latitude,
-    //longitude: req.body.longitude
+    endereco: req.body.endereco,
+    latitude: req.body.latitude,
+    longitude: req.body.longitude
   });
 
   newLocal.save().then(item => res.json(item));
