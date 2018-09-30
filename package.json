@@ -4,7 +4,9 @@
   "description": "Bem-vindo Trainee esse repositório é direcionado ao projeto prático do processo seletivo.",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon server.js"
+    "server": "nodemon server.js",
+    "client": "npm start teste.html",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
@@ -19,8 +21,10 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "concurrently": "^4.0.1",
+    "ejs": "^2.6.1",
     "express": "^4.16.3",
     "mongoose": "^5.2.16",
-    "nodemon": "^1.18.4"
+    "nodemon": "^1.18.4",
+    "pug": "^2.0.3"
   }
 }

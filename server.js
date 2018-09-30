@@ -7,6 +7,7 @@ const local = require("./routes/api/local");
 const app = express();
 
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 //Configurando o DB
 const db = require("./config/keys").mongoURI;
