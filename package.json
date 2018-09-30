@@ -1,0 +1,30 @@
+{
+  "name": "grupo-4",
+  "version": "1.0.0",
+  "description": "Bem-vindo Trainee esse repositório é direcionado ao projeto prático do processo seletivo.",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon server.js",
+    "client": "npm start teste.html",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Trainee-Unect-Grupo-4/processo-seletivo-2018-2.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Trainee-Unect-Grupo-4/processo-seletivo-2018-2/issues"
+  },
+  "homepage": "https://github.com/Trainee-Unect-Grupo-4/processo-seletivo-2018-2#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.0.1",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.16",
+    "nodemon": "^1.18.4",
+    "pug": "^2.0.3"
+  }
+}
